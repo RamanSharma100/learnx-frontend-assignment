@@ -45,7 +45,7 @@ const Topbar: FC<ITopbarProps> = () => {
         </div>
 
         {dropdownOpen && (
-          <div className="absolute top-12 border right-0 w-[10rem] h-auto bg-white shadow rounded">
+          <div className="absolute top-12 border z-50 right-0 w-[10rem] h-auto bg-white shadow rounded">
             <button className="w-full h-10 flex items-center justify-start px-5 hover:bg-gray-100">
               <p className="text-text text-opacity-95 text-sm">Settings</p>
             </button>
