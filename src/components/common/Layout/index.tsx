@@ -8,10 +8,10 @@ interface ILayoutProps {
 
 const Layout: FC<ILayoutProps> = ({ children }) => {
   return (
-    <div className="min-w-screen flex relative min-h-screen w-full h-full bg-white">
+    <div className="min-w-screen flex relative w-full h-full bg-white">
       <Sidebar />
 
-      <div className="w-5/6 flex flex-col">
+      <div className="w-5/6 h-full flex flex-col">
         <Topbar />
         <div className="w-full flex-1 overflow-y-auto">{children}</div>
       </div>
