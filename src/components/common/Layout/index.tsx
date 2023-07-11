@@ -1,5 +1,6 @@
 import { type FC } from "react";
 import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
 
 interface ILayoutProps {
   children: React.ReactNode;
@@ -11,9 +12,8 @@ const Layout: FC<ILayoutProps> = ({ children }) => {
       <Sidebar />
 
       <div className="w-5/6 flex flex-col">
-        <div className="w-full py-4 bg-white">Top Navbar</div>
+        <Topbar />
         <div className="w-full flex-1 overflow-y-auto">{children}</div>
-        Sid
       </div>
     </div>
   );
